@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <script src="js/script.js"></script>
+
+    <title>¿Puedo comerlo?</title>
+</head>
+
+<body>
+    <div id="content">
+      <header id="content__header">
+            <h2 id="title">¿Puedo comerlo?</h2>
+            <p>¡Qué maravilla es <strong>probar una comida diferente cuando vamos a un sitio nuevo</strong>, ¿verdad?.</p>
+            <p>Pero ... ¿sabes si ese plato tan delicioso <strong>se incluye dentro de tu tipo de dieta?</strong></p>
+            <p><strong>Consúltalo</strong> introduciendo tu <u>tipo de dieta</u> y el <u>alimento que quieres consumir</u>:</p>  
+      </header>
+      
+        <main id="content__main">
+            <figure>
+                <img id="img" class="food-img" src="media/eat-together.svg">
+            </figure>
+
+            <p id="answer"></p>
+
+            <form id="user-form">
+                <div id="input-name" class="form">
+                    <label for="user-name">¿Cuál es tu nombre?</label>
+                    <input id="user-name" name="userName" type="text">
+                </div>
+                
+                <div id="input-diet" class="form">
+                    <label for="diet" class="diet__label">Tipo de alimentación: </label>
+                    <select id="diet" name="diet" class="styled-select rounded">
+                        <option value="vegetariana">Vegetariana</option>
+                        <option value="vegana">Vegana</option>
+                        <option value="mediterranea">Mediterranea</option>
+                        <option value="ricaEnFibra">Rica en fibra</option>
+                        <option value="sinGluten">Sin Gluten</option>
+                    </select>
+                </div>
+                
+                <div id="input-food" class="form">
+                    <label for="food" class="food__label">¿Qué comida te está tentando?</label>
+                    <select id="food" name="diet" class="styled-select rounded">
+                        <option value="melocoton">Melocoton</option>
+                        <option value="ajo">Ajo</option>
+                        <option value="calabacin">Calabacín</option>
+                        <option value="pollo">Pollo</option>
+                        <option value="judiaVerde">Judía verde</option>
+                        <option value="brocoli">Brocoli</option>
+                        <option value="patata">Patata</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input class="form" type="button" id="button" value="¿Puedo comerlo?" onclick="executeProgram()"></input>
+                </div>
+            </form>
+         
+        </main>
+
+        <div class="result">
+            <p class="result__sentence"></p>
+        </div>
+      
+    </div>
+    
+  </body>
+</html>
